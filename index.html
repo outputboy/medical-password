@@ -1,0 +1,84 @@
+<html>
+   <head>
+      <title>Password Reset</title>
+      <!--Import Google Icon Font-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.0/css/bootstrap.min.css" />
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!--Customized CSS-->
+      <link href="css/medical-password.css" rel="stylesheet" type="text/css" />
+      <!--Jquery CDN-->
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+         crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/additional-methods.min.js"></script>
+      <!--JavaScript at end of body for optimized loading-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.0/js/bootstrap.min.js"></script>
+      <!--Customized JS-->
+      <script src="js/medical-password.js"></script>
+   </head>
+   <body>
+      <div class="container main--container">
+         <section>
+            <div class="wizard">
+               <!--end navigation bar-->
+               <form role="form" id="password-reset-form">
+                  <div class="row ">
+                           <!--Step 1 header-->
+                           <div class="block block--header">
+                              <!-- Go back arrow
+                                 <div class="block row">
+                                    <a class="back-arrow" href="#go-back"></a>
+                                 </div>
+                              -->
+                              <div class="row">
+                                 <h1>Reset your password</h1>
+                              </div>
+                              <div class="row">
+                                 <p>Your new password must be at least 8 characters, a mix of upper and lower case and at least one special character
+                                 </p>
+                              </div>
+                           </div>
+                           <div class="tab-content">
+                              <div class="block block--content row">
+                                    <div class="block block--password-details">
+                                       <div class="row">
+                                          <div class="col-xs-6">
+                                             <span class="span--password-detail">New password</span>
+                                          </div>
+                                          <div class="col-xs-6">
+                                             <input type="password" name="new_password" placeholder="Password" id="new_password">
+                                          </div>
+                                       </div>
+                                       <div class="new-password-error row"></div>
+                                       <div class="row">
+                                          <div class="col-xs-6">
+                                             <span class="span--password-detail">Confirm password</span>
+                                          </div>
+                                          <div class="col-xs-6">
+                                             <input type="password" name="confirm_password" placeholder="Password" id="confirm_password">
+                                          </div>
+                                       </div>
+                                       <div class="confirm-password-error row"></div>
+                                 </div>
+                              </div>
+                           </div>
+                                 <!--Submit button-->
+                                 <div class="block">
+                                    <div class="row submit-row">
+                                       <ul class="list-inline">
+                                          <li>
+                                             <button type="submit" class="submit" id="submit-button">
+                                             Submit
+                                             </button>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </div>
+               </form>
+               </div>
+            </div>
+         </section>
+      </div>
+   </body>
+<!-- </html> -->
